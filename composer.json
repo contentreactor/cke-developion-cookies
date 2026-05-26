@@ -1,0 +1,40 @@
+{
+	"name": "contentreactor/cke-developion-cookies",
+	"description": ".",
+	"type": "yii2-extension",
+	"license": "mit",
+	"version": "2.0",
+	"support": {
+		"email": "support@contentreactor.com",
+		"issues": "https://github.com/contentreactor/cke-developion-cookies/issues?state=open",
+		"source": "https://github.com/contentreactor/cke-developion-cookies",
+		"docs": "https://github.com/contentreactor/cke-developion-cookies",
+		"rss": "https://github.com/contentreactor/cke-developion-cookies/releases.atom"
+	},
+	"require": {
+		"php": ">=8.2",
+		"craftcms/cms": "^5.0",
+		"craftcms/ckeditor": "^5.0"
+	},
+	"require-dev": {
+		"craftcms/phpstan": "dev-main"
+	},
+	"autoload": {
+		"psr-4": {
+			"ContentReactor\\CkeDevelopionCookies\\": "src/"
+		}
+	},
+	"extra": {
+		"bootstrap": "ContentReactor\\CkeDevelopionCookies\\Cookies"
+	},
+	"config": {
+		"sort-packages": true,
+		"platform": {
+			"php": "8.2"
+		},
+		"allow-plugins": {
+			"yiisoft/yii2-composer": true,
+			"craftcms/plugin-installer": true
+		}
+	}
+}
