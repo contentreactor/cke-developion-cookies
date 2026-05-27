@@ -3,7 +3,7 @@
 	"description": ".",
 	"type": "yii2-extension",
 	"license": "mit",
-	"version": "2.0",
+	"version": "1.0",
 	"support": {
 		"email": "support@contentreactor.com",
 		"issues": "https://github.com/contentreactor/cke-developion-cookies/issues?state=open",
@@ -13,8 +13,7 @@
 	},
 	"require": {
 		"php": ">=8.2",
-		"craftcms/cms": "^5.0",
-		"craftcms/ckeditor": "^5.0"
+		"craftcms/ckeditor": "<5.0"
 	},
 	"require-dev": {
 		"craftcms/phpstan": "dev-main"
@@ -35,6 +34,9 @@
 		"allow-plugins": {
 			"yiisoft/yii2-composer": true,
 			"craftcms/plugin-installer": true
+		},
+		"audit": {
+			"block-insecure": false
 		}
 	}
 }

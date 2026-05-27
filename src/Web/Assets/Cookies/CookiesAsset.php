@@ -9,7 +9,6 @@ class CookiesAsset extends BaseCkeditorPackageAsset
 {
 	/** @var string */
 	public $sourcePath = __DIR__ . '/dist';
-	public string $namespace = '@contentreactor/ckeditor5-cookies';
 
 	public $js = [
 		['cookies.js', 'type' => 'module']

@@ -25,7 +25,7 @@ class Cookies extends Module implements BootstrapInterface
 		}
 
 		if (Craft::$app->getRequest()->getIsCpRequest()) {
-			CKEditor::registerCkeditorPackage(CookiesAsset::class, 'cookies.js');
+			CKEditor::registerCkeditorPackage(CookiesAsset::class);
 		}
 	}
 }
