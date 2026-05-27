@@ -35,22 +35,24 @@
 	],
 	"devDependencies": {
 		"@ckeditor/ckeditor5-package-tools": "^0.0.1",
+		"@rollup/plugin-terser": "^1.0.0",
 		"ckeditor5": "^48.1.1",
+		"esbuild": "^0.28.0",
 		"eslint": "^9.35.0",
 		"eslint-config-ckeditor5": ">=12.1.1",
 		"husky": "^9.1.7",
 		"lint-staged": "^16.1.6",
 		"stylelint": "^16.24.0",
 		"stylelint-config-ckeditor5": ">=12.1.1",
-		"terser": "^5.47.1",
+		"terser": "^5.48.0",
 		"vite": "^8.0.13"
 	},
 	"peerDependencies": {
 		"ckeditor5": ">=46.1.1"
 	},
 	"scripts": {
-		"build": "vite build --mode production",
-		"build:dev": "vite build --mode development",
+		"build": "vite build --mode development",
+		"watch": "vite build --watch --mode development",
 		"lint": "eslint \"**/*.js\" --quiet",
 		"stylelint": "stylelint --quiet --allow-empty-input 'theme/**/*.css'",
 		"prepare": "npm run build"

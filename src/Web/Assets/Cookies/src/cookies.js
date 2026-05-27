@@ -9,7 +9,6 @@ export class Cookies extends Plugin {
 	init() {
 		const editor = this.editor
 		const base = this.editor.data.processor
-		// const shyButton = window.shyButton
 		const { t } = editor.locale
 
 		editor.ui.componentFactory.add('cookies', locale => {
@@ -24,8 +23,25 @@ export class Cookies extends Plugin {
 
 			buttonView.on('execute', () => {
 				editor.model.change(writer => {
-					const text = writer.createText('shyButton.placeholder')
+					const text = writer.createText('[cookie]')
 					editor.model.insertContent(text, editor.model.document.selection)
+
+					const formBody = new FormData()
+
+					formBody.append('action', '_craft-cookies/utilities/get-data')
+					formBody.append(Craft.csrfTokenName, Craft.csrfTokenValue)
+
+					fetch(location.origin, {
+						method: 'POST',
+						headers: {
+							Accept: 'application/json',
+						},
+						body: formBody,
+					})
+						.then(response => response.json())
+						.then(data => {
+							console.log(data)
+						})
 				})
 			})
 
