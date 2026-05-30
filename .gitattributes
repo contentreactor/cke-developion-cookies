@@ -2,6 +2,7 @@
 .gitattributes export-ignore
 .github/ export-ignore
 .gitignore export-ignore
+.editorconfig export-ignore
 CHANGELOG.md export-ignore
 README.md export-ignore
 SECURITY.md export-ignore
