@@ -3,7 +3,7 @@
 	"description": ".",
 	"type": "yii2-extension",
 	"license": "mit",
-	"version": "1.1.1",
+	"version": "1.0.0",
 	"support": {
 		"email": "support@contentreactor.com",
 		"issues": "https://github.com/contentreactor/cke-developion-cookies/issues?state=open",
