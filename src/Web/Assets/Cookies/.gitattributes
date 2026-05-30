@@ -1,5 +1,7 @@
 dist/ export-ignore
 icons/ export-ignore
+lang/ export-ignore
+ckeditor5-metadata.json export-ignore
 scripts/ export-ignore
 src/ export-ignore
 theme/ export-ignore
