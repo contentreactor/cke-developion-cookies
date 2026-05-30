@@ -16,3 +16,16 @@
 *.png		-text
 *.gif		-text
 *.jpg		-text
+dist/ export-ignore
+icons/ export-ignore
+scripts/ export-ignore
+src/ export-ignore
+theme/ export-ignore
+.editorconfig export-ignore
+.eslintrc.cjs export-ignore
+.gitattributes export-ignore
+.gitignore export-ignore
+.stylelintrc export-ignore
+ckeditor5.metadatajson export-ignore
+package-lock.json export-ignore
+package.json export-ignore

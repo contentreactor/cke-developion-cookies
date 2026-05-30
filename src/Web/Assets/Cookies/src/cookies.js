@@ -1,5 +1,6 @@
-import { Plugin, ButtonView } from 'ckeditor5'
-import shortcodesIcon from './../theme/icons/ckeditor.svg?raw'
+import { Plugin } from 'ckeditor5/src/core'
+import { ButtonView } from 'ckeditor5/src/ui'
+import buttonIcon from './../theme/icons/ckeditor.svg'
 
 export class Cookies extends Plugin {
 	static get pluginName() {
@@ -15,8 +16,8 @@ export class Cookies extends Plugin {
 			const buttonView = new ButtonView(locale)
 
 			buttonView.set({
-				label: 'shyButton.label',
-				icon: shortcodesIcon,
+				label: 'Insert Cookies Info',
+				icon: buttonIcon,
 				withText: false,
 				tooltip: true,
 			})
