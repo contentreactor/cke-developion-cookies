@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 namespace ContentReactor\CkeDevelopionCookies\Web\Assets\Cookies;
 
+use Craft;
 use craft\ckeditor\web\assets\BaseCkeditorPackageAsset;
 
 class CookiesAsset extends BaseCkeditorPackageAsset
@@ -22,4 +23,17 @@ class CookiesAsset extends BaseCkeditorPackageAsset
 	public array $toolbarItems = [
 		'cookies',
 	];
+
+	public function registerPackage(): void
+	{
+		Craft::$app->getView()->registerTranslations('cke-developion-cookies', [
+			'Insert Cookie Data',
+			'Name',
+			'Category',
+			'Description',
+			'Vendor',
+		]);
+
+		parent::registerPackage();
+	}
 }
